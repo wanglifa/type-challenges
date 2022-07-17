@@ -17,7 +17,6 @@ const tupleToObject = (array) => {
  */
 // 1. = {}
 // 2. [P in T[number]]
-
-type TupleToObject<T extends readonly any[]> = {
+type TupleToObject<T extends readonly (string | number | symbol)[]> = {
   [P in T[number]]: P
 }
