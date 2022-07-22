@@ -6,3 +6,4 @@ const concat = (T: unknown[], U: unknown[]) => {
 }
 
 type Concat<T extends unknown[], U extends unknown[]> = [...T, ...U]
+
