@@ -9,4 +9,9 @@ const Replace = (str: string, from: string, to: string) => {
     }
   }
 }
-type Replace<S extends string, From extends string, To extends string> = S extends `${infer Start}${From}${infer End}` ? From extends '' ? S : `${Start}${To}${End}` : S
+type Replace<S extends string, From extends string, To extends string> = S extends 
+  `${infer Start}${From}${infer End}` 
+    ? From extends '' 
+      ? S 
+      : `${Start}${To}${End}` 
+    : S
