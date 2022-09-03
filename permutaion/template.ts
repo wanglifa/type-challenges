@@ -17,6 +17,7 @@ namespace t00296 {
   type Permutation<T> = S3<T>
   type perm = Permutation<Uni>; 
 }
+console.log(111)
 
 //
 // const t = ['a','b','c'];
