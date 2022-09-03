@@ -36,5 +36,5 @@ console.log(222)
 // }
 // permute(t)
 // console.log(result)
-
+console.log('xxx')
 type Permutation<T, U = T> =[U] extends [never] ? [] : (T extends U  ? [T, ...Permutation<Exclude<U, T>>] : [])
